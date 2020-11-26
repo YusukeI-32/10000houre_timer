@@ -1,0 +1,15 @@
+<%= form_with(model: user , lokal: true) do |form| %>
+
+
+    <table class="field">
+        <tr>
+            <th><%= form.label :する事 %></th>
+            <td><%= form.text_area :name %></td>
+        </tr>
+        <tr>
+            <th><%= form.label :時間 %></th>
+            <td><%= form.text_area :hour %></td>
+        </tr>
+
+    </table>
+<% end %>

@@ -1,0 +1,14 @@
+<table>
+    <h1>Timer</h1>
+
+    <tbody>
+        <% @user.each do |user| %>
+            <tr>
+                <td><%= user.name %></td>
+                <td><%= user.hour %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<%= link_to '追加', new_user_path %>
